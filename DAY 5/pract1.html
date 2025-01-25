@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Km to Miles Converter</title>
+    <script>
+        function kmtomilesfunction() {
+            
+            var km = parseFloat(document.getElementById('km').value);
+            var miles = km * 0.621371;
+            document.getElementById('result').textContent = `Result: ${miles.toFixed(2)} miles`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Km to Miles Converter</h1>
+    <img src="images.png" height="200px" width="370px" alt="Image not found">
+
+    <form onsubmit="return false;">
+        <input type="number" id="km" placeholder="Enter Value in Kilometers">
+        <input type="button" onclick="kmtomilesfunction()" value="Convert">
+        <h2 id="result">Result: </h2>
+    </form>
+</body>
+</html>

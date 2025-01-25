@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Account Registration</title>
+</head>
+<body>
+  <h1>Bank Account Registration Form</h1>
+G  <form action="submit_form.php" method="POST">
+    <label for="full-name">Full Name:</label><br>
+    <input type="text" id="full-name" name="full_name" placeholder="Enter your full name" required><br><br>
+
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required><br><br>
+
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" placeholder="Enter your address" rows="4" required></textarea><br><br>
+
+    <label for="account-type">Account Type:</label><br>
+    <select id="account-type" name="account_type" required>
+      <option value="savings">Savings Account</option>
+      <option value="current">Current Account</option>
+      <option value="fixed-deposit">Fixed Deposit</option>
+    </select><br><br>
+
+    <label for="initial-deposit">Initial Deposit:</label><br>
+    <input type="number" id="initial-deposit" name="initial_deposit" placeholder="Enter deposit amount" required><br><br>
+
+    <label>
+      <input type="checkbox" name="agree_terms" required>
+      I agree to the <a href="#">Terms and Conditions</a>
+    </label><br><br>
+
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
